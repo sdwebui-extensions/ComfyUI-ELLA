@@ -21,12 +21,16 @@ if "ella" not in folder_paths.folder_names_and_paths:
     current_paths = [os.path.join(folder_paths.models_dir, "ella")]
 else:
     current_paths, _ = folder_paths.folder_names_and_paths["ella"]
+ella_cache = "/stable-diffusion-cache/models/ella"
+current_paths.append(ella_cache)
 folder_paths.folder_names_and_paths["ella"] = (current_paths, folder_paths.supported_pt_extensions)
 
 if "ella_encoder" not in folder_paths.folder_names_and_paths:
     current_paths = [os.path.join(folder_paths.models_dir, "ella_encoder")]
 else:
     current_paths, _ = folder_paths.folder_names_and_paths["ella_encoder"]
+ella_encoder = "/stable-diffusion-cache/models/ella_encoder"
+current_paths.append(ella_encoder)
 folder_paths.folder_names_and_paths["ella_encoder"] = (current_paths, folder_paths.supported_pt_extensions)
 
 
